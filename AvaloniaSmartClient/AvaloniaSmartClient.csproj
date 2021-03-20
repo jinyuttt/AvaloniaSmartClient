@@ -9,11 +9,21 @@
     <AvaloniaResource Include="Assets\**" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="Assets\boxIconLarge.png" />
+    <None Remove="Assets\boxIconLarge.svg" />
+    <None Remove="Assets\boxIconSmall.png" />
+    <None Remove="Assets\boxIconSmall.svg" />
+    <None Remove="Assets\slidersIconLarge.png" />
+    <None Remove="Assets\slidersIconLarge.svg" />
+    <None Remove="Assets\slidersIconOld.png" />
+    <None Remove="Assets\slidersIconSmall.png" />
+    <None Remove="Assets\slidersIconSmall.svg" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Avalonia" Version="0.10.0" />
     <PackageReference Include="Avalonia.Desktop" Version="0.10.0" />
-    <PackageReference Include="Avalonia.Diagnostics" Version="0.10.0" />
     <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.0" />
     <PackageReference Include="Avalonia.ThemeManager" Version="0.10.0" />
-    <PackageReference Include="AvaloniaUIRibbon" Version="1.0.5-beta" />
+    <PackageReference Include="AvaloniaUIRibbon" Version="1.1.0-beta" />
   </ItemGroup>
 </Project>

@@ -23,13 +23,16 @@ namespace AvaloniaSmartClient
 
         public override void OnFrameworkInitializationCompleted()
         {
+            var mainWindowViewModel = new MainWindowViewModel();
+
+
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktopLifetime)
             {
                 Selector = ThemeSelector.Create("Themes");
                 Selector.LoadSelectedTheme("AvaloniaApp.theme");
                 desktopLifetime.MainWindow = new MainWindow()
                 {
-                    DataContext = Selector
+                    DataContext = mainWindowViewModel
                 };
                 desktopLifetime.Exit += (sennder, e) => Selector.SaveSelectedTheme("AvaloniaApp.theme");
             }
