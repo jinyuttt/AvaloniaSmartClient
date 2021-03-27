@@ -8,6 +8,7 @@
         x:Class="AvaloniaSmartClient.Views.MainWindow"
 	     BorderBrush="{DynamicResource FillBrush}" 
 		TitleBarForeground="White"
+	 
 	     HasSystemDecorations="False"
         Icon="/Assets/avalonia-logo.ico"
         Title="AvaloniaSmartClient">
@@ -147,8 +148,33 @@
 		</ControlTemplate>
 	</ribbon:RibbonWindow.Resources>
 	<ribbon:RibbonWindow.Styles>
-		<Style Selector="CheckBox TextBlock">
-			<Setter Property="TextWrapping" Value="Wrap"/>
+	
+		
+		<Style Selector="TabControl WrapPanel">
+			<Setter Property="Background" Value="#2B579A"/>
+		</Style>
+
+		
+		<Style Selector="TabItem:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+			<Setter Property="Background" Value="#124078"/>
+		</Style>
+
+		<Style Selector="TabItem:focus">
+			<Setter Property="Foreground" Value="#2B579A"/>
+			<Setter Property="Margin" Value="0 0 0 0"/>
+			<Setter Property="Padding" Value="10 0"/>
+		</Style>
+		<Style Selector="TabItem:focus /template/ ContentPresenter#PART_ContentPresenter">
+			<Setter Property="Background" Value="#f0f0f0"/>
+		</Style>
+
+		<Style Selector="TabItem:selected">
+			<Setter Property="Foreground" Value="#2B579A"/>
+			<Setter Property="Margin" Value="0 0 0 0"/>
+			<Setter Property="Padding" Value="10 0"/>
+		</Style>
+		<Style Selector="TabItem:selected /template/ ContentPresenter#PART_ContentPresenter">
+			<Setter Property="Background" Value="#f0f0f0"/>
 		</Style>
 	</ribbon:RibbonWindow.Styles>
 	<ribbon:RibbonWindow.TitleBarBackground>
@@ -835,8 +861,11 @@
 	
 		<StackPanel>
 		<TabControl>
-			<TabItem Header="测试">
-				
+			<TabItem Header="测试" VerticalContentAlignment="Center">
+				<TextBlock>mytest</TextBlock>
+			</TabItem>
+			<TabItem Header="测试" VerticalContentAlignment="Center">
+				<TextBlock>江湖路远，我们它朝再会</TextBlock>
 			</TabItem>
 		</TabControl>
 	</StackPanel>

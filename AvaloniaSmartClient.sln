@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluginManger", "PluginMange
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBilPlugin", "IBilPlugin\IBilPlugin.csproj", "{FF2B9A18-0773-4989-B2B6-921CC19BA95D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaApplication1", "AvaloniaApplication1\AvaloniaApplication1.csproj", "{855047B7-8273-4862-A17F-673676C226D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FF2B9A18-0773-4989-B2B6-921CC19BA95D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF2B9A18-0773-4989-B2B6-921CC19BA95D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF2B9A18-0773-4989-B2B6-921CC19BA95D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{855047B7-8273-4862-A17F-673676C226D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{855047B7-8273-4862-A17F-673676C226D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{855047B7-8273-4862-A17F-673676C226D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{855047B7-8273-4862-A17F-673676C226D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
