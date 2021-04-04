@@ -1,0 +1,26 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AvaloniaSmartClient.Views.DataTask">
+	<UserControl.Resources>
+		
+	</UserControl.Resources>
+	<UserControl.Styles>
+		<Style Selector="DataGridCell.gdp">
+			<Setter Property="FontWeight" Value="Bold" />
+			
+		</Style>
+	</UserControl.Styles>
+		
+	<DataGrid Name="dataGrid1" Margin="12" CanUserResizeColumns="True" CanUserReorderColumns="True">
+		<DataGrid.Columns>
+			<DataGridTextColumn Header="Country" Binding="{Binding Name}" Width="6*" />
+			<DataGridTextColumn Header="Region" Binding="{Binding Region}" Width="4*" />
+			<DataGridTextColumn Header="Population" Binding="{Binding Population}" Width="3*" />
+			<DataGridTextColumn Header="Area" Binding="{Binding Area}" Width="3*" />
+			<DataGridTextColumn Header="GDP" Binding="{Binding GDP}" Width="3*" CellStyleClasses="gdp" />
+		</DataGrid.Columns>
+	</DataGrid>
+</UserControl>
